@@ -1,0 +1,32 @@
+.mission-section{
+    background: linear-gradient(0deg, #000123, #250125);
+}
+.mission-section .col-lg-6 .video-wrapper{
+    border-radius:30px;
+}
+.mission-section .mission-text{
+    text-align: center;
+    
+}
+video{
+    width: 100%;
+    height: 100%;
+    border-radius:30px;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-color);
+    opacity: 0.3; /* adjust the opacity as needed */
+    border-radius:30px;
+  }
+
+@media (max-width: 575.98px) { 
+    .mission-text{
+        font-size: 13.5px;
+    }
+
+ }

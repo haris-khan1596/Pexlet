@@ -1,0 +1,83 @@
+<section id="contact">
+<footer class="footer" id="contact">
+    <div class="container-fluid">
+      <div class="row mx-2">
+        <div class="col-md-6 my-5">
+          <h3>Send us a message</h3>
+          <form action="https://formsubmit.co/thelaraibnadeem@gmail.com" method="POST" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+              <div class="invalid-feedback">
+                Please provide valid number!
+              </div>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+              <div class="invalid-feedback">
+                Please provide valid email!
+              </div>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message"></textarea>
+            </div>
+            <input type="hidden" name="_next" value="http://localhost:3000">
+            <input type="hidden" name="_captcha" value="false">
+            <button class="btn">Send</button>
+          </form>
+        </div>
+        <div class="col-md-6 d-flex my-5">
+          <div class="contact-wrap m-auto p-0">
+            <h3 class="mb-4">Contact Us!</h3>
+          <p>Email: contact@pexlet.com</p>
+          <p>Contact Number: 0317-0407683</p>
+          <ul class="social-media-icons">
+            <li><a href="https://instagram.com/pexlet.official?igshid=ZDdkNTZiNTM=" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/pexlet/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+
+</script>
